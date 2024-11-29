@@ -1,6 +1,6 @@
 from pydantic import BaseModel, ConfigDict
 
-from utils.status import StatusEnum
+from src.utils.status import StatusEnum
 
 
 class TaskCreate(BaseModel):

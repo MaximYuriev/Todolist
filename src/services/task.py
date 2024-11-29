@@ -2,10 +2,10 @@ from typing import Annotated, Sequence
 
 from fastapi import Depends
 
-from models.task import Task
-from repositories.task import TaskRepository
-from schemas.task import TaskCreate, TaskUpdate
-from utils.status import StatusEnum
+from src.models.task import Task
+from src.repositories.task import TaskRepository
+from src.schemas.task import TaskCreate, TaskUpdate
+from src.utils.status import StatusEnum
 
 
 class TaskService:

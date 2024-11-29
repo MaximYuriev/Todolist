@@ -2,11 +2,11 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends
 
-from models.task import Task
-from schemas.task import TaskCreate, TaskUpdate
-from services.task import TaskService
-from utils.dependencies import get_task_by_id
-from utils.status import StatusEnum
+from src.models.task import Task
+from src.schemas.task import TaskCreate, TaskUpdate
+from src.services.task import TaskService
+from src.utils.dependencies import get_task_by_id
+from src.utils.status import StatusEnum
 
 task_router = APIRouter(prefix="/tasks", tags=["Task"])
 

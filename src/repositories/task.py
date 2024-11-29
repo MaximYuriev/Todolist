@@ -5,7 +5,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from db import get_session
-from models.task import Task
+from src.models.task import Task
 
 
 class TaskRepository:

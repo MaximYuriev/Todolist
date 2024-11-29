@@ -3,7 +3,7 @@ from typing import Annotated
 from fastapi import Depends, HTTPException
 from starlette import status
 
-from services.task import TaskService
+from src.services.task import TaskService
 
 
 async def get_task_by_id(
